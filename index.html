@@ -194,8 +194,8 @@
                             </p>
                             <p style="margin-top: 10px">
                                 <button id="background-gif-img-select" style="display:none" class="waves-effect waves-light btn">
-                                    Select
-                                    background GIF<sup> NEW</sup>
+                                    选择
+背景GIF<sup> NEW</sup>
                                 </button>
                             </p>
                         </div>
@@ -206,7 +206,7 @@
                         <img id="qrcode" style="margin-top: 0;" class="responsive-img" src="intro.png">
                     </div>
                     <div class="card-content">
-                        <p align="center">用手机扫描试试吧!</p>
+                        <p align="center">保存二维码，使用手机浏览器扫描二维码</p>
                     </div>
                 </div>
             </div>
@@ -220,194 +220,6 @@
                 </a>
             </p>
         </div>
-    </div>
-    <div id="home">
-        <div class="row" style="padding-top: 0;display:none">
-            <div class="col s12 l4 push-l8">
-                <div class="card">
-                    <div class="card-image">
-                        <img class="responsive-img" src="intro.png">
-                        <a class="btn-floating halfway-fab waves-effect waves-light"><i class="material-icons" onclick="if (!window.__cfRLUnblockHandlers) return false; j_customize()" data-cf-modified-9954810ba05b8a7f3c5e2c35-="">lightbulb_outline</i></a>
-                    </div>
-                    <div class="card-content">
-                        <p align="center">
-                            <i>Awesome-qr makes the QR code awesome!</i><br>
-                            Try to scan with your smartphone!
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 l8 pull-l4">
-                <h3 style="font-weight: lighter;margin-top: 0;">Awesome,<br>Right now.</h3>
-                <p>Black & white QR codes are bloody boring, huh?</p>
-                <p>Try to be awesome!</p>
-                <pre id="code-snpt">require(['awesome-qr'], function(awesomeQR) {
-    awesomeQR.create({
-        text: 'Awesome-qr makes the QR code awesome!',
-        size: 800,
-        backgroundImage: &lt;img&gt;,
-        bindElement: 'img-qrcode'
-     });
-});
-                </pre>
-                <p>
-                    <a class="waves-effect waves-light btn" onclick="if (!window.__cfRLUnblockHandlers) return false; j_customize()" data-cf-modified-9954810ba05b8a7f3c5e2c35-="">Try it yourself</a>
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col s12 l6">
-                <div class="card">
-                    <div class="card-content">
-                        <h5>Basic values</h5>
-                        <div class="input-field">
-                            <textarea id="contents" class="materialize-textarea">Makito loves Kafuu Chino.</textarea>
-                            <label for="contents">Contents</label>
-                        </div>
-                        <div class="input-field">
-                            <label for="in-size">Size (px)</label>
-                            <input type="number" id="in-size" value="800" />
-                        </div>
-                        <div class="input-field">
-                            <label for="in-margin">Margin (px)</label>
-                            <input type="number" id="in-margin" value="20" />
-                        </div>
-                        <div class="input-field">
-                            <label for="in-dotScale">Dot scale</label>
-                            <input type="number" id="in-dotScale" value="0.35" />
-                        </div>
-                        <div id="c-ctr" style="display: none;">
-                            <div class="input-field">
-                                <label for="in-cd">Color Dark</label>
-                                <input type="text" id="in-cd" value="#000000" />
-                            </div>
-                            <div class="input-field">
-                                <label for="in-cl">Color Light</label>
-                                <input type="text" id="in-cl" value="#FFFFFF" />
-                            </div>
-                        </div>
-                        <div id="b-ctr" style="display: none; margin-top: 20px;margin-bottom:0;">
-                            <div class="input-field">
-                                <label for="in-bin-threshold">Binarize threshold (0&lt;threshold&lt;255)</label>
-                                <input type="number" id="in-bin-threshold" value="128" />
-                            </div>
-                        </div>
-                        <div id="backgroundImgLoaded" style="display:none; margin-top: 25px;">
-                            <div class="input-field">
-                                <label for="in-backgroundDimming">Background dimming</label>
-                                <input type="text" id="in-backgroundDimming" value="rgba(0, 0, 0, 0.1)" />
-                            </div>
-                        </div>
-                        <div id="logoImgLoaded" style="display:none; margin-top: 25px;">
-                            <div class="input-field">
-                                <label for="in-logo-scale">Logo scale (0&lt;logoScale&lt;1.0)</label>
-                                <input type="number" id="in-logo-scale" value="0.2" />
-                            </div>
-                            <div class="input-field">
-                                <label for="in-logo-margin">Logo margin (px)</label>
-                                <input type="number" id="in-logo-margin" value="6" />
-                            </div>
-                            <div class="input-field">
-                                <label for="in-logo-radius">Logo corner radius (px)</label>
-                                <input type="number" id="in-logo-radius" value="8" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 l6">
-                <div class="card">
-                    <div class="card-content">
-                        <h5>Extra options</h5>
-                        <p style="margin-top: 10px">
-                            <input type="checkbox" class="filled-in" id="whiteMargin" />
-                            <label for="whiteMargin">White margin</label>
-                        </p>
-                        <p style="margin-top: 10px">
-                            <input type="checkbox" class="filled-in" id="maskedDots" />
-                            <label for="maskedDots">Masked dots (experimental)</label>
-                        </p>
-                        <p style="margin-top: 10px">
-                            <input type="checkbox" class="filled-in" id="auto-color" checked />
-                            <label for="auto-color">Auto color (override dark and light color)</label>
-                        </p>
-                        <p style="margin-top: 10px">
-                            <input type="checkbox" class="filled-in" id="binarize" />
-                            <label for="binarize">Binarize (override dark and light color)</label>
-                        </p>
-                        <div id="file-api-issue" style="display: none;margin-top: 10px">
-                            <p class="orange-text"><i>File APIs are not fully supported in this browser.</i></p>
-                        </div>
-                        <div id="file-form">
-                            <p style="margin-top: 10px">
-                                <button id="background-img-select" class="waves-effect waves-light btn">
-                                    选择背景图片
-                                </button>
-                            </p>
-                            <p style="margin-top: 10px">
-                                <button id="logo-img-select" class="waves-effect waves-light btn">
-                                    选择图标
-                                </button>
-                            </p>
-                            <p style="margin-top: 10px">
-                                <button id="background-gif-img-select" style="display:none" class="waves-effect waves-light btn">
-                                    Select
-                                    background GIF<sup> NEW</sup>
-                                </button>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-image">
-                        <img id="qrcode" style="margin-top: 0;" class="responsive-img" src="intro.png">
-                        <a class="btn-floating halfway-fab waves-effect waves-light"><i class="material-icons" onclick="if (!window.__cfRLUnblockHandlers) return false; j_customize()" data-cf-modified-9954810ba05b8a7f3c5e2c35-="">refresh</i></a>
-                    </div>
-                    <div class="card-content">
-                        <p align="center">用手机扫描试试吧!</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col s12 l4 push-l8">
-
-
-            </div>
-            <p style="position:fixed; right: 0;bottom: 0;padding: 20px; z-index: 9999;">
-                <a class="btn-floating btn-large waves-effect waves-light" onclick="if (!window.__cfRLUnblockHandlers) return false; j_generate()" data-cf-modified-9954810ba05b8a7f3c5e2c35-="">
-                    <i class="material-icons">生成</i>
-                </a>
-            </p>
-        </div>
-    </div>
-    <div id="generate">
-        <div class="row" style="padding-top: 0;">
-            <div class="col s12 l4 push-l8">
-                <div class="card">
-                    <div class="card-image">
-                        <img id="qrcode" style="margin-top: 0;" class="responsive-img" src="intro.png">
-                        <a class="btn-floating halfway-fab waves-effect waves-light"><i class="material-icons" onclick="if (!window.__cfRLUnblockHandlers) return false; j_customize()" data-cf-modified-9954810ba05b8a7f3c5e2c35-="">refresh</i></a>
-                    </div>
-                    <div class="card-content">
-                        <p align="center">Try to scan with your smartphone!</p>
-                    </div>
-                </div>
-
-
-            </div>
-            <div class="col s12 l8 pull-l4">
-                <h3 style="font-weight: lighter;margin-top: 0;">Awesome!<br>Isn't it?</h3>
-                <p>It's awesome, right?</p>
-                <p>Just embed Awesome-qr.js in your website.</p>
-                <p>You're good to go!</p>
-                <p>
-                    <a class="waves-effect waves-light btn" onclick="if (!window.__cfRLUnblockHandlers) return false; j_more();" data-cf-modified-9954810ba05b8a7f3c5e2c35-="">More about Awesome-qr.js</a>
-                </p>
-                <p style="opacity: 0.7">
-                    <a class="waves-effect waves-light btn" onclick="if (!window.__cfRLUnblockHandlers) return false; j_customize();" data-cf-modified-9954810ba05b8a7f3c5e2c35-="">Try again</a>
-                </p>
-
-            </div>
-
         </div>
     </div>
     <p style="font-size:14px;opacity:0.6;"> &copy; 2025
